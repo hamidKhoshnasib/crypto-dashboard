@@ -65,11 +65,9 @@ function TokenList() {
         console.error("Failed to fetch tokens:", error);
 
         return (
-            <div className="flex flex-col items-center justify-center py-10">
-                <p className="text-red-500 font-medium mb-3">
-                    Could not load tokens. Please try again later.
-                </p>
-            </div>
+            <p className="text-red-500 font-medium mb-3">
+                Could not load tokens. Please try again later.
+            </p>
         );
     }
 
