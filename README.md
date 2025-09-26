@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Crypto Dashboard
 
-## Getting Started
+A simple and responsive dashboard that displays the **Top 10 market tokens** using live data from the [CoinGecko API](https://www.coingecko.com/).  
+This project was built as part of a **Front-End Developer technical interview task**.
 
-First, run the development server:
+---
 
+## ✨ Features
+
+- **Top 10 Tokens**: Displays the top 10 trending tokens by market cap.
+- **Real-time Data**: Fetches live data from the CoinGecko API.
+- **Component-Based**: Modular and reusable React components.
+- **Advanced State Management**: Uses **TanStack Query (React Query)** to handle loading, error, and success states.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **UI Library**: [React](https://react.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **State Management & Data Fetching**: [TanStack Query](https://tanstack.com/query/latest)
+
+---
+
+## 🚀 Getting Started
+
+Follow the instructions below to set up the project locally.
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) **v20+**
+- npm installed
+
+### Installation
+
+Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/hamidKhoshnasib/crypto-dashboard.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Navigate to the project folder:
+```bash
+cd crypto-dashboard
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Install dependencies:
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Run Development Server
+Start the local development server:
+```bash
+npm run dev
+```
 
-## Learn More
+Then open 👉 [http://localhost:3000](http://localhost:3000) in your browser.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📂 Folder Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+/src
+├── /app                # Next.js App Router (pages and layouts)
+├── /assets             # Static assets like images and fonts
+├── /components         # Reusable UI and layout components
+│   ├── /layout         # Major layout components (Header, Footer)
+│   └── /ui             # Small, generic UI elements (Button, Table)
+├── /hooks              # Custom React hooks (e.g., useGetData)
+├── /types              # TypeScript type definitions
+└── /views              # Components that compose an entire page view
+    └── /homepage       # Sections specific to the homepage
+```
